@@ -1,0 +1,402 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify API Response for posting a new request",
+        "description": "",
+        "id": "verify-add--update-and-get-api-s-for-location;verify-api-response-for-posting-a-new-request;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4029935900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends a request to add a new location 1st Helena Drive, LA with phone number +41 125 568 963",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1st Helena Drive, LA",
+                  "offset": 43
+                },
+                {
+                  "val": "+41 125 568 963",
+                  "offset": 82
+                }
+              ],
+              "location": "LocationAPISteps.sendAddLocationRequest(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 654729100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify the response after adding a new location for the test case TC_001",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TC_001",
+                  "offset": 66
+                }
+              ],
+              "location": "LocationAPISteps.verifyAddLocationResponse(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1894704000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User retrieves the location data via GET request",
+            "match": {
+              "location": "LocationAPISteps.getLocationData()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155074600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify the newly Added location by retrieving the location data for the test case TC_001",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Added",
+                  "offset": 17
+                },
+                {
+                  "val": "TC_001",
+                  "offset": 82
+                }
+              ],
+              "location": "LocationAPISteps.verifyGetLocationResponse(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIValidation"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@addAddress"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verify API Response for posting a new request",
+        "description": "",
+        "id": "verify-add--update-and-get-api-s-for-location;verify-api-response-for-posting-a-new-request;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 701960900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends a request to add a new location 30 Nuremberg, Germany with phone number +49 027 065 015",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30 Nuremberg, Germany",
+                  "offset": 43
+                },
+                {
+                  "val": "+49 027 065 015",
+                  "offset": 83
+                }
+              ],
+              "location": "LocationAPISteps.sendAddLocationRequest(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78063600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify the response after adding a new location for the test case TC_002",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TC_002",
+                  "offset": 66
+                }
+              ],
+              "location": "LocationAPISteps.verifyAddLocationResponse(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1818121500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User retrieves the location data via GET request",
+            "match": {
+              "location": "LocationAPISteps.getLocationData()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100362200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify the newly Added location by retrieving the location data for the test case TC_002",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Added",
+                  "offset": 17
+                },
+                {
+                  "val": "TC_002",
+                  "offset": 82
+                }
+              ],
+              "location": "LocationAPISteps.verifyGetLocationResponse(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIValidation"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@addAddress"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Verify API response for location update",
+        "description": "",
+        "id": "verify-add--update-and-get-api-s-for-location;verify-api-response-for-location-update;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2562724200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User updates the address in the request payload with 70 winter walk, USA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "70 winter walk, USA",
+                  "offset": 53
+                }
+              ],
+              "location": "LocationAPISteps.updateLocationAddress(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49945300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the response after updating the location address for the test case TC_001",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TC_001",
+                  "offset": 74
+                }
+              ],
+              "location": "LocationAPISteps.verifyUpdateLocationResponse(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1854329400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User retrieves the location data via GET request",
+            "match": {
+              "location": "LocationAPISteps.getLocationData()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115734300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify the newly Updated location by retrieving the location data for the test case TC_001",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Updated",
+                  "offset": 17
+                },
+                {
+                  "val": "TC_001",
+                  "offset": 84
+                }
+              ],
+              "location": "LocationAPISteps.verifyGetLocationResponse(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIValidation"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@updateAddress"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Verify API response for location update",
+        "description": "",
+        "id": "verify-add--update-and-get-api-s-for-location;verify-api-response-for-location-update;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2489192100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User updates the address in the request payload with 27 Stein Kirche, Germany",
+            "match": {
+              "arguments": [
+                {
+                  "val": "27 Stein Kirche, Germany",
+                  "offset": 53
+                }
+              ],
+              "location": "LocationAPISteps.updateLocationAddress(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75844500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the response after updating the location address for the test case TC_002",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TC_002",
+                  "offset": 74
+                }
+              ],
+              "location": "LocationAPISteps.verifyUpdateLocationResponse(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1865175300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User retrieves the location data via GET request",
+            "match": {
+              "location": "LocationAPISteps.getLocationData()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 94361700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify the newly Updated location by retrieving the location data for the test case TC_002",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Updated",
+                  "offset": 17
+                },
+                {
+                  "val": "TC_002",
+                  "offset": 84
+                }
+              ],
+              "location": "LocationAPISteps.verifyGetLocationResponse(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIValidation"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@updateAddress"
+          }
+        ]
+      }
+    ],
+    "name": "Verify ADD, Update and GET API\u0027s for location",
+    "description": "",
+    "id": "verify-add--update-and-get-api-s-for-location",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/APITest.feature",
+    "tags": [
+      {
+        "name": "@APIValidation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 16
+        }
+      }
+    ]
+  }
+]

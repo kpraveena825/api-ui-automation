@@ -1,0 +1,126 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Verify API Response for posting a new request",
+        "description": "",
+        "id": "to-verify-add-location-verify;verify-api-response-for-posting-a-new-request;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4616170800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends a request to add a new location 1st Helena Drive, LA and +41 125 568 963",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1st Helena Drive, LA",
+                  "offset": 43
+                },
+                {
+                  "val": "+41 125 568 963",
+                  "offset": 68
+                }
+              ],
+              "location": "LocationAPISteps.sendAddLocationRequest(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1111713600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify the response after adding a new location",
+            "match": {
+              "location": "LocationAPISteps.verifyAddLocationResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIValidation"
+          },
+          {
+            "name": "@addAddress"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Verify API Response for posting a new request",
+        "description": "",
+        "id": "to-verify-add-location-verify;verify-api-response-for-posting-a-new-request;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 625853200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sends a request to add a new location 30 Nuremberg, Germany and +49 027 065 015",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30 Nuremberg, Germany",
+                  "offset": 43
+                },
+                {
+                  "val": "+49 027 065 015",
+                  "offset": 69
+                }
+              ],
+              "location": "LocationAPISteps.sendAddLocationRequest(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 92637700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify the response after adding a new location",
+            "match": {
+              "location": "LocationAPISteps.verifyAddLocationResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@APIValidation"
+          },
+          {
+            "name": "@addAddress"
+          }
+        ]
+      }
+    ],
+    "name": "to verify add location verify",
+    "description": "",
+    "id": "to-verify-add-location-verify",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/APITest.feature",
+    "tags": [
+      {
+        "name": "@APIValidation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

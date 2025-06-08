@@ -1,11 +1,11 @@
 
-# API & UI Test Automation Framework
+## API & UI Test Automation Framework
 
 This repository contains a **Test Automation Framework** built using **Selenium WebDriver**, **Rest Assured**, and **Java** for comprehensive testing of **Web UI** and **RESTful APIs**.
 
 ---
 
-## 📋 Prerequisites
+### Prerequisites
 
 Ensure the following tools are installed:
 
@@ -15,7 +15,7 @@ Ensure the following tools are installed:
 
 ---
 
-## 🛠️ Tech Stack
+### Tech Stack
 
 | Layer           | Tools / Libraries          |
 |-----------------|----------------------------|
@@ -27,23 +27,25 @@ Ensure the following tools are installed:
 | Reporting       | Cucumber HTML Reporter     |
 | Design Pattern  | Page Object Model (POM)    |
 
----
 
-## ⚙️ Setup
+### Setup
 
-### 1. Clone the Repository
+#### 1. clone the repository
 
-```bash
 git clone https://github.com/kpraveena825/api-ui-automation.git
 
-### 2. import the repository
+#### 2. import the repository to IDE
 
-### 3. Install Dependencies
-
-### 4. Running Tests
-
-### 5. Project Structure
-
+#### 3. Install Dependencies
+``` bash
+ mvn clean install
+```
+#### 4. Running Tests
+``` bash
+  mvn test verify
+```
+#### 5. Project Structure
+```
 src/
 ├── main/
 │   └── java/
@@ -59,6 +61,9 @@ src/
 │   └── resources/                  # Test data files (Expected JSON, actual response data)
 ├── pom.xml                         # Project dependencies and build configuration
 
-### 6. Reporting
+```
+#### 6. Reporting
 
 target/cucumber-report-html/cucumber-html-reports/feature-overview.html
+![image](https://github.com/user-attachments/assets/15a179e2-f38b-428d-8521-855a9f41d116)
+

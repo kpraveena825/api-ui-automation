@@ -66,7 +66,6 @@ src/
 #### 6. Reporting
 
 target/cucumber-report-html/cucumber-html-reports/feature-overview.html
-
-![image](https://github.com/user-attachments/assets/f58ad5ff-dbc8-4854-8762-62dccd6645fc)
+![image](https://github.com/user-attachments/assets/15a179e2-f38b-428d-8521-855a9f41d116)
 
 

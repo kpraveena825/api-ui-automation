@@ -27,10 +27,8 @@ Ensure the following tools are installed:
 | Reporting       | Cucumber HTML Reporter     |
 | Design Pattern  | Page Object Model (POM)    |
 
----
 
 ### Setup
-
 
 #### 1. clone the repository
 
@@ -62,10 +60,10 @@ src/
 │   │   └── options/                # Test runner (TestRunner.java)
 │   └── resources/                  # Test data files (Expected JSON, actual response data)
 ├── pom.xml                         # Project dependencies and build configuration
+
 ```
 #### 6. Reporting
 
 target/cucumber-report-html/cucumber-html-reports/feature-overview.html
 ![image](https://github.com/user-attachments/assets/15a179e2-f38b-428d-8521-855a9f41d116)
-
 

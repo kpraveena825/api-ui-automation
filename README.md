@@ -32,21 +32,21 @@ Ensure the following tools are installed:
 ## Setup
 
 
-### 1. clone the repository
+#### 1. clone the repository
 
 git clone https://github.com/kpraveena825/api-ui-automation.git
 
-### 2. import the repository to IDE
+#### 2. import the repository to IDE
 
-### 3. Install Dependencies
+#### 3. Install Dependencies
 ``` bash
  mvn clean install
 ```
-### 4. Running Tests
+#### 4. Running Tests
 ``` bash
   mvn test verify
 ```
-### 5. Project Structure
+#### 5. Project Structure
 ```
 src/
 ├── main/
@@ -63,7 +63,7 @@ src/
 │   └── resources/                  # Test data files (Expected JSON, actual response data)
 ├── pom.xml                         # Project dependencies and build configuration
 ```
-### 6. Reporting
+#### 6. Reporting
 
 target/cucumber-report-html/cucumber-html-reports/feature-overview.html
 

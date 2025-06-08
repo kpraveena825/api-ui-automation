@@ -31,21 +31,21 @@ Ensure the following tools are installed:
 
 ## Setup
 
-### 1. Clone the Repository
 
-```bash
+### 1. clone the repository
+
 git clone https://github.com/kpraveena825/api-ui-automation.git
 
-### 2. import the repository
+### 2. import the repository to IDE
 
 ### 3. Install Dependencies
-
+``` bash
  mvn clean install
-
+```
 ### 4. Running Tests
-
+``` bash
   mvn test verify
-
+```
 ### 5. Project Structure
 
 src/

@@ -47,7 +47,7 @@ git clone https://github.com/kpraveena825/api-ui-automation.git
   mvn test verify
 ```
 ### 5. Project Structure
-
+```
 src/
 ├── main/
 │   └── java/
@@ -62,7 +62,7 @@ src/
 │   │   └── options/                # Test runner (TestRunner.java)
 │   └── resources/                  # Test data files (Expected JSON, actual response data)
 ├── pom.xml                         # Project dependencies and build configuration
-
+```
 ### 6. Reporting
 
 target/cucumber-report-html/cucumber-html-reports/feature-overview.html

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="6.449655">
+    <testcase classname="to verify add location verify" name="Verify API Response for posting a new request" time="5.731031">
+        <system-out><![CDATA[Given User sends a request to add a new location 1st Helena Drive, LA and +41 125 568 963.passed
+Then Verify the response after adding a new location........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="to verify add location verify" name="Verify API Response for posting a new request 2" time="0.718624">
+        <system-out><![CDATA[Given User sends a request to add a new location 30 Nuremberg, Germany and +49 027 065 015.passed
+Then Verify the response after adding a new location........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

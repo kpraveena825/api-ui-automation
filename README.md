@@ -1,11 +1,11 @@
 
-# API & UI Test Automation Framework
+## API & UI Test Automation Framework
 
 This repository contains a **Test Automation Framework** built using **Selenium WebDriver**, **Rest Assured**, and **Java** for comprehensive testing of **Web UI** and **RESTful APIs**.
 
 ---
 
-## Prerequisites
+### Prerequisites
 
 Ensure the following tools are installed:
 
@@ -15,7 +15,7 @@ Ensure the following tools are installed:
 
 ---
 
-## Tech Stack
+### Tech Stack
 
 | Layer           | Tools / Libraries          |
 |-----------------|----------------------------|
@@ -29,7 +29,7 @@ Ensure the following tools are installed:
 
 ---
 
-## Setup
+### Setup
 
 
 #### 1. clone the repository
